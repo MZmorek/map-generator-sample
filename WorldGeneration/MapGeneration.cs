@@ -52,16 +52,16 @@ namespace Project.Game.WorldGeneration
         /// <summary>
         /// Method responsible for loading the map data.
         /// </summary>
-        public void LoadData(MapSaveData buildingSaveData)
+        public void LoadData(MapSaveData mapSaveData)
         {
-            noiseFrequency = buildingSaveData.NoiseFrequency;
-            noiseSeed = buildingSaveData.NoiseSeed;
-            distanceFromMapCenter = buildingSaveData.DistanceFromMapCenter;
-            landThresholdValue = buildingSaveData.LandThresholdValue;
-            noiseValue = buildingSaveData.NoiseValue;
-            islandRadius = buildingSaveData.IslandRadius;
-            offset.x = buildingSaveData.Offset.x;
-            offset.y = buildingSaveData.Offset.y;
+            noiseFrequency = mapSaveData.NoiseFrequency;
+            noiseSeed = mapSaveData.NoiseSeed;
+            distanceFromMapCenter = mapSaveData.DistanceFromMapCenter;
+            landThresholdValue = mapSaveData.LandThresholdValue;
+            noiseValue = mapSaveData.NoiseValue;
+            islandRadius = mapSaveData.IslandRadius;
+            offset.x = mapSaveData.Offset.x;
+            offset.y = mapSaveData.Offset.y;
         }
 
         /// <summary>
